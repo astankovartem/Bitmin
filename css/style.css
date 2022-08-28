@@ -810,9 +810,9 @@ h1{
 }
 
 .Roadmap_block1{
-    width: 270px;
-    height: 302px;
     background: url(../img/Roadmap_block1.png) center no-repeat;
+    background-size: 100% 100%;
+    padding: 30px 35px 110px 30px;
 }
 
 .Roadmap_img{
@@ -820,20 +820,118 @@ h1{
     top: -17px;
 }
 
+.Roadmap_block2{
+    background: url(../img/Roadmap_block2.png) center no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    top: -30px;
+    padding: 100px 35px 30px 30px;
+}    
 
-
-.test_block{
-    width: 270px;
-    height: 180px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    text-align: center;
-    padding-top: 30px;
-    background: url(../img/test.png) center no-repeat;
+.Roadmap_contentBlock2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
 }
 
-.test{
-    background-color: #29293b;
-    padding-top: 50px;
-    padding-bottom: 50px;
+.block1_date{
+    font-size: 12px;
+    font-weight: 400;
+    color: #9b9b9e;
+    margin-bottom: 9px;
+}
+.block1_title{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #2f2f33;
+    margin-bottom: 20px;
+}
+.block1_text{
+    max-width: 205px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: italic;
+    color: #9b9b9e;
+
+}
+
+.block2_date{
+    font-size: 12px;
+    font-weight: 400;
+    color: #9b9b9e;
+    margin-bottom: 9px;
+}
+.block2_title{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #2f2f33;
+    margin-bottom: 20px;
+}
+.block2_text{
+    max-width: 205px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: italic;
+    color: #9b9b9e;
+
+}
+
+.Roadmap_content2{
+    display: none;
+}
+
+@media(max-width: 1180px){
+    .Roadmap_content{
+        display: none;
+    }
+    .Roadmap_content2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .block3_date{
+        font-size: 12px;
+        font-weight: 400;
+        color: #9b9b9e;
+        margin-bottom: 9px;
+    }
+    .block3_title{
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #2f2f33;
+        margin-bottom: 20px;
+    }
+    .block3_text{
+        max-width: 205px;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        font-style: italic;
+        color: #9b9b9e;
+    }
+    .Roadmap_block3{
+        background-color: #fefefe;
+        border-radius: 8px;
+        padding: 30px 35px 30px 30px;
+        margin-bottom: 20px;
+    }
+    .Roadmap_block3:last-child{
+        margin: 0 auto;
+    }
+    .Roadmap_conteiner{
+        max-width: 600px;
+    }
+}
+@media(max-width: 610px){
+    .Roadmap_conteiner{
+        max-width: 400px;
+    }
+    .Roadmap_block3{
+        margin: 0 auto 20px auto;
+    }
 }
