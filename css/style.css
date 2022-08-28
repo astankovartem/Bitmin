@@ -1,0 +1,839 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.conteiner{
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+@media(max-width: 1800px){
+    .conteiner{
+        max-width: 1600px;
+    }
+}
+@media(max-width: 1640px){
+    .conteiner{
+        max-width: 1400px;
+    }
+}
+@media(max-width: 1440px){
+    .conteiner{
+        max-width: 1200px;
+    }
+}
+@media(max-width: 1240px){
+    .conteiner{
+        max-width: 1000px;
+    }
+    .CryptocurrencyPriceCapitalizations_conteiner{
+        max-width: 1000px;
+    }
+}
+@media(max-width: 1040px){
+    .conteiner{
+        max-width: 800px;
+    }
+    .CryptocurrencyPriceCapitalizations_conteiner{
+        max-width: 800px;
+    }
+    .PromotionsAnnouncement_conteiner{
+        max-width: 800px;
+    }
+    
+}
+@media(max-width: 840px){
+    .conteiner{
+        max-width: 600px;
+    }
+    .CryptocurrencyPriceCapitalizations_conteiner{
+        max-width: 600px;
+    }
+    .PromotionsAnnouncement_conteiner{
+        max-width: 600px;
+    }
+}
+@media(max-width: 640px){
+    .conteiner{
+        max-width: 500px;
+    }
+    .PromotionsAnnouncement_conteiner{
+        max-width: 500px;
+    }
+}
+@media(max-width: 540px){
+    .conteiner{
+        max-width: 400px;
+    }
+}
+@media(max-width: 440px){
+    .conteiner{
+        max-width: 350px;
+    }
+}
+@media(max-width: 390px){
+    .conteiner{
+        max-width: 300px;
+    }
+}
+@media(max-width: 340px){
+    .conteiner{
+        max-width: 250px;
+    }
+}
+
+.header{
+    padding-top: 38px;
+    padding-bottom: 27px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.header_conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    margin-top: 18px;
+}
+
+.nav_list{
+    display: flex;
+}
+
+.nav_element{
+    margin-right: 55px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.nav_element:last-child{
+    margin-right: 0px;
+}
+
+.intro{
+    background: url(../img/background.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 110px;
+    margin-bottom: 320px;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 600;
+    color: #ffffff;
+    padding-top: 407px;
+    margin-bottom: 50px;
+}
+
+@media(max-width: 500px){
+    h1{
+        font-size: 38px;
+        line-height: 50px;
+        padding-top: 200px;
+    }
+}
+@media(max-width: 300px){
+    h1{
+        font-size: 32px;
+        line-height: 45px;
+        padding-top: 200px;
+    }
+}
+
+.intro_block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro_text1{
+    margin-right: 34px;
+    font-size: 16px;
+    line-height: 70px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.player_img{
+    margin-right: 34px;
+}
+
+.intro_text2{
+    font-size: 16px;
+    line-height: 70px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+@media(max-width: 650px){
+    .intro_block{
+        display: flex;
+        flex-direction: column;
+    }
+    .intro_text1{
+        margin-right: 0;
+    }
+    .player_img{
+        margin-right: 0;
+    }
+}
+
+.phone{
+    position: absolute;
+    top: 690px;
+    left: 26%;
+    z-index: 1;
+}
+
+@media(max-width: 1470px){
+    .phone{
+        display: none;
+    }
+    .intro{
+        background: url(../img/background2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        margin-bottom: 100px;
+    }
+}
+
+.header_button1{
+    width: 102px;
+    height: 42px;
+    border: 2px solid #ffffff;
+    border-radius: 21px;
+    background: url(../img/.png);
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-right: 12px;
+}
+
+.header_button2{
+    width: 132px;
+    height: 42px;
+    border-radius: 21px;
+    border: #ffffff;
+    background: url(../img/icon.png) 18px  no-repeat; 
+    background-color: #201375;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.burger{
+    display: none;
+}
+.burger_window{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #9b9b9e;
+    z-index: 1;
+    display: none;
+}
+
+@media(max-width: 1240px){
+    .nav{
+        display: none;
+    }
+    .header_buttons{
+        display: none;
+    }
+    .burger{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .burger_line{
+		display: block;
+		width: 30px;
+		height: 3px;
+		margin-bottom: 5px;
+		background-color: white;
+    }
+    .burger_line:last-child{
+        margin-bottom: 0;
+    }
+ 
+}
+
+.CryptocurrencyPriceCapitalizations_h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: #2f2f33;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.CryptocurrencyPriceCapitalizations_text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #9b9b9e;
+    max-width: 790px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.CryptocurrencyPriceCapitalizations_conteiner{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.CryptocurrencyPriceCapitalizations_imges{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 130px;
+}
+
+@media(max-width: 1240px){
+    .CryptocurrencyPriceCapitalizations_conteiner{
+        max-width: 700px;
+    }
+    .CryptocurrencyPriceCapitalizations_imges{
+        justify-content: space-around;
+    }
+    .CryptocurrencyPriceCapitalizations img{
+        margin-bottom: 60px;
+    }
+}
+@media(max-width: 1040px){
+    .CryptocurrencyPriceCapitalizations_conteiner{
+        max-width: 650px;
+    }
+    .CryptocurrencyPriceCapitalizations img{
+        margin-bottom: 40px;
+    }
+}
+@media(max-width: 650px){
+    .CryptocurrencyPriceCapitalizations_conteiner{
+        max-width: 550px;
+    }
+    .CryptocurrencyPriceCapitalizations img{
+        margin-bottom: 6px;
+    }
+}
+@media(max-width: 555px){
+    .CryptocurrencyPriceCapitalizations_conteiner{
+        max-width: 500px;
+    }
+}
+
+.PromotionsAnnouncement{
+    background-color: #29293b;
+    padding: 90px 0 75px 0;
+}
+.PromotionsAnnouncement_title{
+    font-size: 32px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.PromotionsAnnouncement_subtitle{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #ffffff;
+    max-width: 790px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.PromotionsAnnouncement_flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item_block{
+    max-width: 275px;
+    display: flex;
+    justify-content: space-between;
+}
+.item_img{
+    width: 40px;
+    height: 16px;
+    padding-top: 5px;
+}
+.flex_img{
+    margin-bottom: 10px;
+}
+.item_text1{
+    max-width: 194px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.item_text2{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.item_text3{
+    max-width: 190px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.item_text4{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.item_text5{
+    max-width: 260px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.item_text6{
+    max-width: 270px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.PromotionsAnnouncement_button{
+    max-width: 270px;
+    height: 50px;
+    background-color: #6f55eb;
+    border-radius: 25px;
+    border: none; 
+    font-size: 16px;
+    font-weight: 600;
+    color: #fefefe;
+    margin: 0 auto;
+    display: block;
+} 
+.PromotionsAnnouncement_flex{
+    margin-bottom: 60px;
+}
+
+@media(max-width: 1810px){
+    .PromotionsAnnouncement_conteiner{
+        max-width: 1000px;
+    }
+    .flex_item{
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 1040px){
+    .PromotionsAnnouncement_conteiner{
+        max-width: 800px;
+    }
+    
+}
+@media(max-width: 840px){
+    .PromotionsAnnouncement_conteiner{
+        max-width: 600px;
+    }
+}
+@media(max-width: 640px){
+    .PromotionsAnnouncement_conteiner{
+        max-width: 500px;
+    }
+    .PromotionsAnnouncement_flex{
+        justify-content: center;
+    }
+}
+
+@media(max-width: 280px){
+    .flex_img{
+        max-width: 100%;
+    }
+    .flex_item{
+        max-width: 100%;
+    }
+}
+
+.WhyBitmin_conteiner{
+    max-width: 1666px;
+    margin: 0 auto;
+}
+
+.WhyBitmin_wrapper{
+    padding-top: 90px;
+    padding-bottom: 141px;
+    display: flex;
+}
+
+.WhyBitmin_content{
+    padding-top: 93px;
+    margin-left: 130px;
+}
+
+.WhyBitmin_title{
+    font-size: 32px;
+    font-weight: 600;
+    color: #2f2f33;
+    margin-bottom: 23px;
+}
+
+.WhyBitmin_text{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #9b9b9e;
+    max-width: 560px;
+    margin-bottom: 58px;
+}
+
+.WhyBitmin_blockTitle{
+    font-size: 20px;
+    font-weight: 600;
+    color: #2f2f33;
+    margin-bottom: 10px;
+}
+
+.WhyBitmin_blockText{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #9b9b9e;
+    max-width: 460px;
+}
+
+.WhyBitmin_block{
+    margin-bottom: 50px;
+    background: url(../img/WhyBitmin_block1.png) left top no-repeat;
+    padding-left: 100px;
+}
+
+.WhyBitmin_blockTitle2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #2f2f33;
+    margin-bottom: 10px;
+}
+
+.WhyBitmin_blockText2{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #9b9b9e;
+    max-width: 465px;
+}
+
+.WhyBitmin_block2{
+    background: url(../img/WhyBitmin_block2.png) left top no-repeat;
+    padding-left: 100px;
+}
+
+.DigitalCurrencyEvolution_conteiner{
+    max-width: 1684px;
+    margin: 0 auto;
+}
+
+.DigitalCurrencyEvolution_wrapper{
+    display: flex;
+    justify-content: end;
+    padding-bottom: 92px;
+}
+
+.DigitalCurrencyEvolution_content{
+    padding-top: 74px;
+    margin-right: 144px;
+}
+
+.DigitalCurrencyEvolution_title{
+    font-size: 32px;
+    font-weight: 600;
+    color: #2f2f33;
+    margin-bottom: 23px;
+}
+
+.DigitalCurrencyEvolution_text{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #9b9b9e;
+    max-width: 560px;
+    margin-bottom: 58px;    
+}
+
+.DigitalCurrencyEvolution_blockTitle{
+    font-size: 20px;
+    font-weight: 600;
+    color: #2f2f33;
+    margin-bottom: 10px;
+}
+
+.DigitalCurrencyEvolution_blockText{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #9b9b9e;
+    max-width: 470px;    
+}
+
+.DigitalCurrencyEvolution_block{
+    background: url(../img/DigitalCurrencyEvolution_block1.png) left top no-repeat;
+    padding-left: 100px;
+    margin-bottom: 50px;
+}
+
+.DigitalCurrencyEvolution_blockTitle2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #2f2f33;
+    margin-bottom: 10px;    
+}
+
+.DigitalCurrencyEvolution_blockText2{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #9b9b9e;
+    max-width: 470px;    
+}
+
+.DigitalCurrencyEvolution_block2{
+    background: url(../img/DigitalCurrencyEvolution_block2.png) left top no-repeat;
+    padding-left: 100px;
+}
+
+@media(max-width: 1710px){
+    .WhyBitmin_img{
+        margin-left: 20px;
+    }
+    .DigitalCurrencyEvolution_img{
+        margin-right: 20px;
+    }
+}
+
+@media(max-width: 1490px){
+    .WhyBitmin_wrapper{
+        flex-direction: column;
+    }
+    .WhyBitmin_img{
+        max-width: 40%;
+        margin: 0 auto;
+    }
+    .WhyBitmin_content{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .WhyBitmin_block{
+        background: url(../img/WhyBitmin_block1.png) center top no-repeat;
+        padding-top: 85px;
+        padding-left: 0;
+    }
+    .WhyBitmin_block2{
+        background: url(../img/WhyBitmin_block2.png) center top no-repeat;
+        padding-top: 85px;
+        padding-left: 0;
+    }
+    .WhyBitmin_blockText{
+        margin: 0 auto;
+    }
+    .WhyBitmin_blockText2{
+        margin: 0 auto;
+    }
+    .DigitalCurrencyEvolution_wrapper{
+        flex-direction: column;
+    }
+    .DigitalCurrencyEvolution_img{
+        max-width: 40%;
+        margin: 0 auto;
+    }
+    .DigitalCurrencyEvolution_content{
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 93px;
+    }
+    .DigitalCurrencyEvolution_block{
+        background: url(../img/DigitalCurrencyEvolution_block1.png) center top no-repeat;
+        padding-top: 85px;
+        padding-left: 0;
+    }
+    .DigitalCurrencyEvolution_block2{
+        background: url(../img/DigitalCurrencyEvolution_block2.png) center top no-repeat;
+        padding-top: 85px;
+        padding-left: 0;
+    }
+    .DigitalCurrencyEvolution_blockText{
+        margin: 0 auto;
+    }
+    .DigitalCurrencyEvolution_blockText2{
+        margin: 0 auto;
+    }
+    .WhyBitmin_wrapper{
+        padding-bottom: 0;
+    }
+}
+
+@media(max-width: 1000px){
+    .WhyBitmin_img{
+        max-width: 50%;
+    }
+    .DigitalCurrencyEvolution_img{
+        max-width: 50%;
+    }
+}
+@media(max-width: 800px){
+    .WhyBitmin_img{
+        max-width: 70%;
+    }
+    .DigitalCurrencyEvolution_img{
+        max-width: 70%;
+    }
+}
+@media(max-width: 450px){
+    .WhyBitmin_img{
+        max-width: 80%;
+    }
+    .DigitalCurrencyEvolution_img{
+        max-width: 80%;
+    }
+}
+@media(max-width: 300px){
+    .WhyBitmin_img{
+        max-width: 95%;
+    }
+    .DigitalCurrencyEvolution_img{
+        max-width: 95%;
+    }
+}
+
+.Roadmap{
+    background: url(../img/background3.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.Roadmap_conteiner{
+    max-width: 1171px;
+    margin: 0 auto;
+}
+
+.Roadmap_wrapper{
+    padding-top: 92px;
+}
+
+.Roadmap_text{
+    text-align: center;
+}
+.Roadmap_title{
+    font-size: 32px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 32px;
+}
+.Roadmap_subtitle{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #ffffff;
+    padding-bottom: 58px;
+    max-width: 790px;
+    margin: 0 auto;
+}
+
+.Roadmap_contentBlock1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Roadmap_block1{
+    width: 270px;
+    height: 302px;
+    background: url(../img/Roadmap_block1.png) center no-repeat;
+}
+
+.Roadmap_img{
+    position: relative;
+    top: -17px;
+}
+
+
+
+.test_block{
+    width: 270px;
+    height: 180px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 30px;
+    background: url(../img/test.png) center no-repeat;
+}
+
+.test{
+    background-color: #29293b;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
