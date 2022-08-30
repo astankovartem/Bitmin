@@ -782,6 +782,7 @@ h1{
 
 .Roadmap_wrapper{
     padding-top: 92px;
+    padding-bottom: 83px;
 }
 
 .Roadmap_text{
@@ -933,5 +934,266 @@ h1{
     }
     .Roadmap_block3{
         margin: 0 auto 20px auto;
+    }
+}
+
+.byTocen_conteiner{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.byTocen_wrapper{
+    padding-top: 91px;
+}
+
+.byTocen_flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 90px;
+    border-bottom: 1px solid #ecede7;
+}
+
+.byTocen_flexBlock1{
+    max-width: 380px;
+}
+.byTocen_img{
+    margin-bottom: 60px;
+    margin-left: 102px;
+}
+.byTocen_block1Title{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    color: #2f2f33;
+    margin-bottom: 23px;
+}
+.byTocen_block1Text{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #9b9b9e;
+}
+
+.byTocen_flexBlock2{
+    padding-top: 93px;
+}
+.byTocen_block2Title{
+    font-size: 24px;
+    font-weight: 400;
+    color: #2f2f33;
+    margin-bottom: 31px;
+}
+.byTocen_block2Timer{
+    font-size: 32px;
+    font-weight: 600;
+    color: #2f2f33;
+    margin-bottom: 62px;
+}
+.byTocen_flexBlock21{
+    display: flex;
+    justify-content: space-between;
+}
+.byTocen_flexBlock21Text{
+    font-size: 14px;
+    font-weight: 400;
+    color: #b4b4b6;
+    margin-bottom: 12px;
+}
+.byTocen_block2Img{
+    margin-bottom: 32px;
+}
+.byTocen_flexBlock22{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 62px;
+}
+.flexBlock22Text_int{
+    font-size: 32px;
+    font-weight: 600;
+    color: #2f2f33;
+    margin-bottom: 10px;
+}
+.flexBlock22Text_text{
+    font-size: 14px;
+    font-weight: 400;
+    color: #b4b4b6;
+}
+.byTocen_buuton{
+    width: 210px;
+    height: 50px;
+    background-color: #6f55eb;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fefefe;
+}
+.byTocen_block2{
+    padding-top: 47px;
+    padding-bottom: 132px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.byTocen_block2Img1{
+    width: 128px;
+    height: 42px;
+}
+.byTocen_block2Img2{
+    width: 66px;
+    height: 42px;
+}
+.byTocen_block2Img3{
+    width: 70px;
+    height: 42px;
+}
+.byTocen_block2Img4{
+    width: 65px;
+    height: 42px;
+}
+.byTocen_block2Img5{
+    width: 125px;
+    height: 32px;
+}
+.byTocen_block2Img6{
+    width: 149px;
+    height: 32px;
+}
+
+@media(max-width: 1190px){
+    .byTocen_flex{
+        flex-direction: column;
+    }
+    .byTocen_flexBlock1{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .byTocen_img{
+        margin: 0 auto 20px auto;
+    }
+    .byTocen_flexBlock2{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .byTocen_block2Img{
+        width: 100%;
+    }
+    .byTocen_block2{
+        margin: 0 10px 0 10px;
+    }
+}
+@media(max-width: 680px){
+    .byTocen_block2Img{
+        width: 90%;
+    }
+    .byTocen_flexBlock2{
+        margin: 0 10px 0 10px;
+    }
+    .byTocen_block2Img1{
+        margin: 0px 10px 30px 10px;
+    }
+    .byTocen_block2Img2{
+        margin: 0px 10px 30px 10px;
+    }
+    .byTocen_block2Img3{
+        margin: 0px 10px 30px 10px;
+    }
+    .byTocen_block2Img4{
+        margin: 0px 10px 30px 10px;
+    }
+    .byTocen_block2Img5{
+        margin: 0px 10px 30px 10px;
+    }
+    .byTocen_block2Img{
+        margin: 0px 10px 30px 10px;
+    }
+}
+
+@media(max-width: 300px){
+    .byTocen_block2Img{
+        width: 90%;
+    }
+}
+
+@media(max-width: 335px){
+    .flexBlock22Text_int{
+        font-size: 25px
+    }
+}
+.bitminSection{
+    display: flex;
+    justify-content: space-between;
+}
+.Bitmin_wallet{
+    width: 50%;
+    background: url(../img/BitminWallet_background.jpg) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    padding: 87px 0 100px 0;
+}
+.ifYouDeveloper{
+    width: 50%;
+    background: url(../img//ifYouDeveloper_background.jpg) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    padding: 87px 0 100px 0;
+}
+.bitminSection_img{
+    margin-bottom: 42px;
+}
+.bitminSection_title{
+    font-size: 32px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 31px;
+}
+.wallet_text{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #ffffff;
+    max-width: 700px;
+    margin: 0 auto 52px auto;
+}
+.ifYouDeveloper_text{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #ffffff;
+    max-width: 650px;
+    margin: 0 auto 80px auto;
+}
+.wallet_button{
+    width: 210px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2f2f33;
+}
+.ifYouDeveloper_button{
+    width: 270px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2f2f33;
+}
+
+@media(max-width: 1345px){
+    .bitminSection{
+        flex-direction: column;
+    }
+    .Bitmin_wallet{
+        width: 100%;
+    }
+    .ifYouDeveloper{
+        width: 100%;
     }
 }
