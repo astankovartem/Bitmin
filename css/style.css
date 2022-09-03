@@ -136,6 +136,17 @@ body{
     left: 0;
     top: 0;
     z-index: 2;
+    transition: all 0.3s ease 0s;
+    
+
+}
+.fixed{
+    background-color: #29293b;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+    opacity: 0.95;
 }
 
 .header_conteiner{
@@ -147,9 +158,9 @@ body{
 .logo{
     font-size: 26px;
     font-weight: 600;
+    line-height: 60px;
     color: #ffffff;
-    line-height: 88px;
-    background: url(../img/logo.png) left 20px no-repeat;
+    background: url(../img/logo.png) left center no-repeat;
     background-size: auto auto;
     padding-left: 45px;
 }
@@ -191,6 +202,13 @@ h1{
     color: #ffffff;
     padding-top: 407px;
     margin-bottom: 50px;
+    transform: translate(0, 60%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+h1._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
 
 @media(max-width: 500px){
@@ -212,6 +230,13 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: translate(0, 120%);
+    opacity: 0;
+    transition: all 1s ease 0.4s;
+}
+.intro_block._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
 
 .intro_text1{
@@ -266,6 +291,13 @@ h1{
     top: 690px;
     left: 26%;
     z-index: 1;
+    transform: translate(-120%, 0);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.phone._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
 
 @media(max-width: 1470px){
