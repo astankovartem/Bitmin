@@ -291,7 +291,7 @@ h1._active{
     top: 690px;
     left: 26%;
     z-index: 1;
-    transform: translate(-120%, 0);
+    transform: translate(-20%, 0);
     opacity: 0;
     transition: all 0.5s ease 0s;
 }
@@ -382,6 +382,13 @@ h1._active{
     color: #2f2f33;
     text-align: center;
     margin-bottom: 28px;
+    transform: translate(-20%, 0);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.CryptocurrencyPriceCapitalizations_h2._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
 
 .CryptocurrencyPriceCapitalizations_text{
@@ -393,6 +400,37 @@ h1._active{
     margin: 0 auto;
     text-align: center;
     margin-bottom: 55px;
+    transform: translate(-20%, 0);
+    opacity: 0;
+    transition: all 0.5s ease 0.1s;
+}
+.CryptocurrencyPriceCapitalizations_text._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+
+}
+
+.CryptocurrencyPriceCapitalizations_img1{
+    transform: translate(-20%, 0);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.CryptocurrencyPriceCapitalizations_img2{
+    transform: translate(20%, 0);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+@media(max-width: 520px){
+    .CryptocurrencyPriceCapitalizations_img2{
+        transform: translate(2%, 0);
+    }
+    .CryptocurrencyPriceCapitalizations_img1{
+        transform: translate(-2%, 0);
+    }
+}
+.CryptocurrencyPriceCapitalizations_img._active{
+    transform: translate(0px, 0px);
+    opacity: 1;    
 }
 
 .CryptocurrencyPriceCapitalizations_conteiner{
@@ -450,6 +488,13 @@ h1._active{
     color: #ffffff;
     text-align: center;
     margin-bottom: 35px;
+    transform: translate(-20%, 0);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.PromotionsAnnouncement_title._active{
+    transform: translate(0px, 0px);
+    opacity: 1;    
 }
 .PromotionsAnnouncement_subtitle{
     font-size: 16px;
@@ -460,8 +505,24 @@ h1._active{
     text-align: center;
     margin: 0 auto;
     margin-bottom: 60px;
+    transform: translate(-20%, 0);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.PromotionsAnnouncement_subtitle._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
 
+.flex_item{
+    transform: translate(0, 120%);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.flex_item._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
 .PromotionsAnnouncement_flex{
     display: flex;
     flex-wrap: wrap;
@@ -571,6 +632,13 @@ h1._active{
     color: #fefefe;
     margin: 0 auto;
     display: block;
+    transform: translate(-20%, 0);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.PromotionsAnnouncement_button._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
 } 
 .PromotionsAnnouncement_flex{
     margin-bottom: 60px;
@@ -625,9 +693,34 @@ h1._active{
     display: flex;
 }
 
+.WhyBitmin_img{
+    transform: translate(-10%, 0);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.WhyBitmin_img._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
 .WhyBitmin_content{
     padding-top: 93px;
     margin-left: 130px;
+    transform: translate(20%, 0);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.WhyBitmin_content._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+@media(max-width: 783px){
+    .WhyBitmin_content{
+        transform: translate(-20%, 0);
+        opacity: 0;
+        transition: all 0.5s ease 0s;
+    }
 }
 
 .WhyBitmin_title{
@@ -701,7 +794,15 @@ h1._active{
 .DigitalCurrencyEvolution_content{
     padding-top: 74px;
     margin-right: 144px;
+    transform: translate(-80%, 0);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
 }
+.DigitalCurrencyEvolution_content._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
 
 .DigitalCurrencyEvolution_title{
     font-size: 32px;
@@ -759,6 +860,33 @@ h1._active{
     background: url(../img/DigitalCurrencyEvolution_block2.png) left top no-repeat;
     padding-left: 100px;
 }
+
+.DigitalCurrencyEvolution_img{
+    transform: translate(10%, 0);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.DigitalCurrencyEvolution_img._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+@media(max-width: 1828px){
+    .DigitalCurrencyEvolution_img{
+        transform: translate(2%, 0);
+        opacity: 0;
+        transition: all 0.5s ease 0s;
+    }
+}
+
+@media(max-width: 783px){
+    .DigitalCurrencyEvolution_img{
+        transform: translate(-20%, 0);
+        opacity: 0;
+        transition: all 0.5s ease 0s;
+    }
+}
+
 
 @media(max-width: 1710px){
     .WhyBitmin_img{
@@ -880,6 +1008,13 @@ h1._active{
 
 .Roadmap_text{
     text-align: center;
+    transform: translate(-20%, 0);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.Roadmap_text._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
 .Roadmap_title{
     font-size: 32px;
@@ -903,6 +1038,16 @@ h1._active{
     justify-content: space-between;
 }
 
+.Roadmap_content{
+    transform: translate(0, 20%);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.Roadmap_content._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
 .Roadmap_block1{
     background: url(../img/Roadmap_block1.png) center no-repeat;
     background-size: 100% 100%;
@@ -1045,6 +1190,14 @@ h1._active{
     justify-content: space-between;
     padding-bottom: 90px;
     border-bottom: 1px solid #ecede7;
+    transform: translate(0, 20%);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.byTocen_flex._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
 
 .byTocen_flexBlock1{
@@ -1128,6 +1281,14 @@ h1._active{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    transform: translate(-20%, 0);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.byTocen_block2._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
 
 .byTocen_block2Img1{
@@ -1225,13 +1386,35 @@ h1._active{
     background-size: 100% 100%;
     text-align: center;
     padding: 87px 0 100px 0;
+    
 }
+
+.Bitmin_wallet_wrapper{
+    transform: translate(0, 1%);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.Bitmin_wallet_wrapper._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
 .ifYouDeveloper{
     width: 50%;
     background: url(../img//ifYouDeveloper_background.jpg) no-repeat;
     background-size: 100% 100%;
     text-align: center;
     padding: 87px 0 100px 0;
+}
+
+.ifYouDeveloper_wrapper{
+    transform: translate(0, 1%);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.ifYouDeveloper_wrapper._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
 .bitminSection_img{
     margin-bottom: 42px;
@@ -1297,7 +1480,16 @@ h1._active{
 .LatestNews_wrapper{
     padding-top: 92px;
     padding-bottom: 130px;
+    transform: translate(0, 20%);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
 }
+
+.LatestNews_wrapper._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
 .LatestNews_main{
     text-align: center;
 }
@@ -1366,7 +1558,16 @@ h1._active{
     padding-bottom: 50px;
     border-bottom: 1px solid #ecede7;
     margin-bottom: 62px;
+    transform: translate(-20%, 0);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
 }
+
+.BitminCurrency_wrapper._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
 .BitminCurrency_title{
     font-size: 42px;
     font-weight: 600;
@@ -1490,7 +1691,16 @@ h1._active{
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 103px;
+    transform: translate(0, 20%);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
 }
+
+.footer_wrapper._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
 .footer_flexBlock{
     display: flex;
     flex-wrap: wrap;
