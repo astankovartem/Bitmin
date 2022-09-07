@@ -163,6 +163,7 @@ body{
     background: url(../img/logo.png) left center no-repeat;
     background-size: auto auto;
     padding-left: 45px;
+    z-index: 100;
 }
 
 .nav{
@@ -178,6 +179,12 @@ body{
     font-size: 16px;
     font-weight: 600;
     color: #ffffff;
+    transition: all 0.15s ease 0s;
+}
+
+.nav_element:hover{
+    color: #9b9b9e;
+    transition: all 0.15s ease 0s;
 }
 
 .nav_element:last-child{
@@ -254,6 +261,12 @@ h1._active{
     border-radius: 50%;
     background-color: #ffffff;
     margin-right: 34px;
+    transition: all 0.15s ease 0s;
+}
+
+.player_circle:hover{
+    opacity: 0.5;
+    transition: all 0.15s ease 0s;
 }
 
 .player_triangle{
@@ -323,6 +336,12 @@ h1._active{
     font-weight: 600;
     color: #ffffff;
     margin-right: 12px;
+    transition: all 0.15s ease 0s;
+}
+
+.header_button1:hover{
+    opacity: 0.5;
+    transition: all 0.15s ease 0s;
 }
 
 .header_button2{
@@ -335,20 +354,47 @@ h1._active{
     font-size: 14px;
     font-weight: 600;
     color: #ffffff;
+    transition: all 0.15s ease 0s;
+}
+
+.header_button2:hover{
+    opacity: 0.5;
+    transition: all 0.15s ease 0s;
 }
 
 .burger{
     display: none;
+    z-index: 100;
 }
 .burger_window{
+    transition: all 0.3s ease 0s;
     width: 100%;
     height: 100%;
     position: fixed;
     left: 0;
     top: 0;
-    background-color: #9b9b9e;
+    transform: translate(0, -120%);
+    opacity: 0;
+}
+
+.burger_window.active{
+    background-color: #29293b;
     z-index: 1;
-    display: none;
+    transform: translate(0px, 0px);
+    opacity: 0.999;
+}
+
+.burger_list{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    transition: all 0.15s ease 0s;
+    margin-top: 230px;
+}
+
+.burger_element{
+    margin-bottom: 40px;
 }
 
 @media(max-width: 1240px){
@@ -369,8 +415,21 @@ h1._active{
 		height: 3px;
 		margin-bottom: 5px;
 		background-color: white;
+        transition: all 0.3s ease 0s;
     }
     .burger_line:last-child{
+        margin-bottom: 0;
+    }
+    .burger_line.line1.active{
+        display: none;
+        margin-bottom: 0;
+    }
+    .burger_line.line2.active{
+        transform: translate(0%, 0%) rotate(-45deg);
+        margin-bottom: 0;
+    }
+    .burger_line.line3.active{
+        transform: translate(0%, -70%) rotate(45deg);
         margin-bottom: 0;
     }
  
@@ -558,6 +617,12 @@ h1._active{
     margin-bottom: 10px;
     background-color: #555555;
     border-radius: 6px;
+    transition: all 0.15s ease 0s;
+}
+
+.flex_img:hover{
+    transition: all 0.15s ease 0s;
+    opacity: 0.5;
 }
 
 .video{
@@ -634,12 +699,16 @@ h1._active{
     display: block;
     transform: translate(-20%, 0);
     opacity: 0;
-    transition: all 0.5s ease 0s;
+    transition: all 0.15s ease 0s;
 }
 .PromotionsAnnouncement_button._active{
     transform: translate(0px, 0px);
     opacity: 1;
 } 
+.PromotionsAnnouncement_button:hover{
+    opacity: 0.5;
+    transition: all 0.15s ease 0s;
+}
 .PromotionsAnnouncement_flex{
     margin-bottom: 60px;
 }
@@ -1274,7 +1343,14 @@ h1._active{
     font-size: 16px;
     font-weight: 600;
     color: #fefefe;
+    transition: all 0.15s ease 0s;
 }
+
+.byTocen_buuton:hover{
+    transition: all 0.15s ease 0s;
+    opacity: 0.5;
+}
+
 .byTocen_block2{
     padding-top: 47px;
     padding-bottom: 132px;
@@ -1450,7 +1526,14 @@ h1._active{
     font-size: 16px;
     font-weight: 600;
     color: #2f2f33;
+    transition: all 0.15s ease 0s;
 }
+
+.wallet_button:hover{
+    transition: all 0.15s ease 0s;
+    opacity: 0.5;
+}
+
 .ifYouDeveloper_button{
     width: 270px;
     height: 50px;
@@ -1460,6 +1543,12 @@ h1._active{
     font-size: 16px;
     font-weight: 600;
     color: #2f2f33;
+    transition: all 0.15s ease 0s;
+}
+
+.ifYouDeveloper_button:hover{
+    transition: all 0.15s ease 0s;
+    opacity: 0.5;
 }
 
 @media(max-width: 1345px){
@@ -1595,7 +1684,14 @@ h1._active{
     font-weight: 600;
     color: #fefefe;
     margin-bottom: 33px;
+    transition: all 0.15s ease 0s;
 }
+
+.BitminCurrency_button:hover{
+    transition: all 0.15s ease 0s;
+    opacity: 0.5;
+}
+
 .BitminCurrency_phone{
     font-size: 24px;
     font-weight: 600;
@@ -1642,7 +1738,14 @@ h1._active{
     font-size: 14px;
     font-weight: 400;
     color: #9b9b9e;
+    transition: all 0.15s ease 0s;
 }
+
+.flexNav_listElement:hover{
+    transition: all 0.15s ease 0s;
+     opacity: 0.5;
+}
+
 .element4{
     margin-right: 20px;
 }

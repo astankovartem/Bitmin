@@ -34,4 +34,18 @@ document.addEventListener('DOMContentLoaded', () => {
 		headerFixed();
 		scrollAnimation();
 	});
+
+	let burger = document.querySelector(".burger");
+	let burger_icon = document.querySelector(".burger_window");
+	let burger_line = document.querySelectorAll(".burger_line");
+	burger.addEventListener("click", menuFunction);
+
+
+	function menuFunction(e){
+		burger_icon.classList.toggle('active');
+		for (let i of burger_line){
+			i.classList.toggle('active');
+		}
+	}
+
 });
